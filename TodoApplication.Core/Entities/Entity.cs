@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace TodoApplication.Core.Entities
 {
-    internal class Entity
+    public class Entity<TId>
     {
-        public int Id { get; set; }
+        public TId id { get; set; }
         public string Title { get; set; }
 
         public string Description { get; set; }
